@@ -1,0 +1,75 @@
+<header class="nbar">
+  <nav class="nb">
+    <!-- LOGO -->
+    <div class="nb-logo">
+      <div class="nb-logo-img">
+      </div>
+      <div class="nb-logo-name">
+        <a
+        href="/"
+          aria-label="Nero"
+          tite="ᓚᘏᗢ"
+        >
+          {{ title }}
+        </a>
+      </div>
+    </div>
+    <!-- BURGER -->
+    <a (click)="triggerBurger()" class="nb-burger">
+      <svg *ngIf="!hasDrop" viewBox="0 0 100 80" width="40" height="40">
+        <rect width="100" height="15" rx="8" style="fill: rgb(208, 208, 208);"></rect>
+        <rect y="30" width="100" height="15" rx="8" style="fill: rgb(208, 208, 208);"></rect>
+        <rect y="60" width="100" height="15" rx="8" style="fill: rgb(208, 208, 208);"></rect>
+      </svg>
+      <svg *ngIf="hasDrop" viewBox="0 0 100 80" width="40" height="40">
+        <rect x="10" y="-10" width="100" height="15" rx="8" style="fill: rgb(208, 208, 208);transform: rotate(45deg);"></rect>
+        <rect x="-50" y="-70" width="100" height="15" rx="8" style="fill: rgb(208, 208, 208); transform: rotate(133deg);"></rect>
+      </svg>
+    </a>
+    <!-- DROPDOWN -->
+    <div [id]="navID + '-dropdown'" class="nb-dropdown">
+      <div class="nb-items">
+        <a
+          href="/"
+          class="nb-item"
+          aria-label="Home"
+          title="Home page"
+          i18n="site header|For go to home page"
+        >
+          Home
+        </a>
+        <a
+          href="/product"
+          class="nb-item"
+          aria-label="Product"
+          title="Product page"
+          i18n="site header|For go to product page"
+        >
+          Product
+        </a>
+        <a
+          href="https://discord.gg/2Akw3qdB5F"
+          class="nb-item"
+          aria-label="Community"
+          title="Nero's discord server"
+          i18n="site header|Redirect on nero's discord server"
+        >
+          Community
+        </a>
+        <a
+          href="/contact"
+          class="nb-item"
+          aria-label="Contact"
+          title="Contact page"
+          i18n="site header|For go to contact page"
+        >
+          Contact
+        </a>
+      </div>
+      <div class="nb-action">
+        <button class="primary">Connection</button>
+        <button class="secondary">Register</button>
+      </div>
+    </div>
+  </nav>
+</header>

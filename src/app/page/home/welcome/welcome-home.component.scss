@@ -1,0 +1,39 @@
+.welcome-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.wh-title {
+  font-size: 3rem;
+  line-height: 100%;
+}
+
+.wh-img {
+  width: 80%;
+}
+
+.wh-content-pres {
+  padding: 1rem;
+}
+
+.wh-content-img {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 610px) {
+  .welcome-hero {
+    display: grid;
+    grid-template-columns: 30% 50%;
+    justify-content: space-around;
+    text-align: inherit;
+  }
+}
+
+@media (min-width: 750px) {
+  .wh-content-pres {
+    padding: 3rem;
+  }
+}

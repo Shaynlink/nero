@@ -1,0 +1,38 @@
+@import './variables.scss';
+
+button.primary, button.secondary {
+  border: none;
+  padding: .8em 1.5em;
+  border-radius: .9rem;
+  outline: none !important;
+
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+
+  &:focus, &:hover {
+    outline: none !important;
+  }
+}
+
+button.primary {
+  background: #96278d;
+  color: #ffffff; // constrast OK
+
+  &:focus, &:hover {
+    background: #66018C;
+    color: $white; // constrast OK
+  }
+}
+
+button.secondary {
+  background: rgba($white, .01);
+  color: $white; // constrast OK
+  border: .8px solid rgba($white, .5);
+
+  &:focus, &:hover {
+    background: #97117c;
+    color: $white; // constrast OK
+  }
+}

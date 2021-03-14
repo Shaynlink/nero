@@ -1,0 +1,10 @@
+.ic {
+  display: inline-block;
+  font: normal normal normal 14px/1;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothin: antialiased;
+}
+.ic-burger:before {
+  content: "\f0c9"
+}
