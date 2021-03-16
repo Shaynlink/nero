@@ -2,3 +2,7 @@ $white: rgb(208, 208, 208);
 $main-color: rgb(208, 208, 208);
 $main-bg: #240827;
 $main-primary: #66018C;
+
+@function getstep($num) {
+  @return repeat($num, 100% / $num)
+}

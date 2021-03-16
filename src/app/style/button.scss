@@ -14,6 +14,15 @@ button.primary, button.secondary {
   &:focus, &:hover {
     outline: none !important;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+    transition-property: none;
+
+    &:hover {
+      color: #ffffff; // constrast OK
+    }
+  }
 }
 
 button.primary {
@@ -23,6 +32,10 @@ button.primary {
   &:focus, &:hover {
     background: #66018C;
     color: $white; // constrast OK
+  }
+
+  &:disabled {
+    background: #8a5485;
   }
 }
 

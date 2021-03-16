@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'decbtn',
-  templateUrl: './decbtn.component.html',
+  template: '',
   styleUrls: [
     './decbtn.component.scss',
   ]

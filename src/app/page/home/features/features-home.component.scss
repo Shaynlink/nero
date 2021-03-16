@@ -1,0 +1,45 @@
+@import './../../../style/variables.scss';
+
+:host {
+  height: 100%;
+  width: 100%;
+}
+
+.features-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5rem;
+}
+
+.fc-content-title {
+  text-align: center;
+}
+
+.fc-title {
+  font-size: 2.7rem;
+}
+
+.fc-content-items {
+  width: 80%;
+  display: grid;
+  grid-template-columns: getstep(1);
+  row-gap: 3rem;
+  text-align: center;
+}
+
+.fc-item {
+  justify-self: center;
+}
+
+.fc-item-content-logo {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 610px) {
+  .fc-content-items {
+    grid-template-columns: getstep(3);
+  }
+}

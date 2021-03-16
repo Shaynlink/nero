@@ -1,0 +1,17 @@
+<div class="cp">
+  <div class="cp-content-image">
+    <img *ngIf="cpImg" class="cp-image" [src]="cpImg" alt="">
+  </div>
+  <h1 class="cp-title">{{cpTitle}}</h1>
+  <div class="cp-price">
+    <p>Starting at</p>
+    <p><span class="cp-content-price">{{cpPrice}}</span> / month</p>
+  </div>
+  <div class="cp-items">
+    <p *ngFor="let item of cpItems">{{item}}</p>
+  </div>
+  <a [href]="ngLink">
+    <button *ngIf="cpAvailable" class="primary">GET STARTED</button>
+  </a>
+  <button *ngIf="!cpAvailable" class="primary" disabled>{{cpMessage}}</button>
+</div>

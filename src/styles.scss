@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: 'Noto Sans';
-  src: url(./assets/font/NotoSans-Regular.ttf) format(ttf),
+  src: url(https://storage.googleapis.com/temp_static/fonts/NotoSans-Regular.ttf) format(ttf),
 }
 @import './app/style/variables.scss';
 
@@ -9,6 +9,7 @@ html {
   font-family: 'Noto Sans', sans-serif;
   width: 100%;
   height: 100%;
+  display: inline-table;
 }
 
 body {

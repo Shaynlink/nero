@@ -1,0 +1,30 @@
+<section class="products-hero">
+  <div class="ph-content-title">
+    <h1 class="ph-title">Our products</h1>
+  </div>
+  <div class="ph-content-items">
+    <card-products
+      [cpImg]="'https://storage.googleapis.com/temp_static/images/price1.svg'"
+      [cpTitle]="'VPS hosting'"
+      [cpPrice]="'2.99'"
+      [cpItems]="[
+        '200 GB of space',
+        '1GB/s unlimited bandwidth',
+        '4GB DDR3 ram'
+      ]"
+      [ngLink]="'/products/vps'"
+    ></card-products>
+    <card-products
+      [cpImg]="'https://storage.googleapis.com/temp_static/images/price2.svg'"
+      [cpTitle]="'Database'"
+      [cpPrice]="'N/A'"
+      [cpAvailable]="false"
+    ></card-products>
+    <card-products
+      [cpImg]="'https://storage.googleapis.com/temp_static/images/price3.svg'"
+      [cpTitle]="'Cloud hosting'"
+      [cpPrice]="'N/A'"
+      [cpAvailable]="false"
+    ></card-products>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+.cp {
+  background: #e8e8e8;
+  color: #000000;
+  width: 18rem;
+  height: 30rem;
+  padding: 2rem 0 2rem 0;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.cp-image {
+  width: 4rem;
+}
+
+.cp-title, .cp-content-price {
+  color: #4C1E78;
+}
+
+.cp-price {
+  line-height: 10px;
+  border-bottom: 1px solid rgba(100, 33, 130, 0.6);
+}
+
+.cp-content-price {
+  font-size: 30px;
+}
